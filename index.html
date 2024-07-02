@@ -7,6 +7,8 @@
     <meta name="description" content="Este é um exemplo de uma página HTML com meta tags para descrição e autor.">
     <link rel="stylesheet" href="assets/style.css">
     <meta name="author" content="Lucas Vida">
+    <!-- Inclusão do BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -80,6 +82,48 @@
                         <div class="grid-item"><img src="assets/img/jedis.webp" alt="Imagem 5"></div>
                         <div class="grid-item"><img src="assets/img/rock.jpg" alt="Imagem 6"></div>
                     </div>
+                    <span class="legenda">Imagens Geradas pelo Ideogram | Bing (Copilot)</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <section class="musica-video galeria">
+                <div class="container-player">
+                    <div class="player">
+                        <div>
+                            <h2>Playlist IA</h2>
+                        </div>
+                        <div class="cover">
+                            <img id="cover" src="" alt="Capa do Disco">
+                        </div>
+                        <audio id="audio"></audio>
+                        <div id="infos" class="infos-banda">
+                            <div class="song-info">
+                                <div id="songName" class="song-name">Nome da Música</div>
+                                <div id="bandName" class="song-banda">Nome da Banda</div>
+                            </div>
+                            <button><i class="bi bi-suit-heart"></i></button>
+                        </div>
+                        <div class="progress-music" id="progress-music">
+                            <div id="progress-bar" class="progress-bar">
+                                <div id="progresso-atual" class="progresso-atual"></div>
+                            </div>
+                        </div>
+                        <div id="btn-controls" class="controls">
+                            <button id="shuffle"><i class="bi bi-shuffle"></i></button>
+                            <button id="prev"><i class="bi bi-skip-start-fill"></i></button>
+                            <button id="play"><i class="bi bi-play-circle-fill"></i></button>
+                            <button id="next"><i class="bi bi-skip-end-fill"></i></button>
+                            <button id="repeat"><i class="bi bi-arrow-repeat"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dDj7DuHVV9E?si=whhYV2HfuuMvK72O"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
         </div>
@@ -90,6 +134,7 @@
             LUCAS VIDA || 2024
         </div>
     </footer>
+    <script src="assets/js/player.js"></script>
 </body>
 
 </html>
