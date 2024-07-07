@@ -120,12 +120,67 @@
                     </div>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dDj7DuHVV9E?si=whhYV2HfuuMvK72O"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>VideIA</h2>
+                    <video width="640" height="360" controls>
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                        <p>Seu navegador não suporta este vídeo.</p>
+                    </video>
+                    <p>Vídeo Gerado por Vidnoz</p>
+
                 </div>
             </section>
+        </div>
+
+        <div class="chat-widget" id="chatWidget">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-chat-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+            </svg>
+        </div>
+
+        <div class="chat-box" id="chat">
+            <div class="chat-header">
+                <div class="titulo-bot">
+                    <span class="nome-bot">ChatBot 🤖</span>
+                    <svg id="fechar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </div>
+                <p>
+                    👋 Bem-vindos ao chat, aqui posso tirar dúvidas sobre o LUCAS VIDA!
+                </p>
+            </div>
+            <div class="chat">
+
+                <div id="conversa" class="conversa">
+                    <div class="balao">
+                        <p class="bot">
+                            Que tal saber sobre a profissão dele?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="digitando">
+                    <div id="loading">
+                        <i>Digitando</i><img src="assets/img/dots.gif">
+                    </div>
+                </div>
+
+                <form action="#" class="form-chat" id="formchat">
+                    <input type="text" id="texto" placeholder="Digite sua dúvida..." maxlength="300">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-arrow-right-square-fill blue" viewBox="0 0 16 16">
+                            <path
+                                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1" />
+                        </svg>
+                    </button>
+                </form>
+
+            </div>
         </div>
 
     </main>
@@ -135,6 +190,7 @@
         </div>
     </footer>
     <script src="assets/js/player.js"></script>
+    <script src="assets/js/bot.js"></script>
 </body>
 
 </html>
